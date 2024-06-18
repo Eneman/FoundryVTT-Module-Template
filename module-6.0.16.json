@@ -1,0 +1,132 @@
+{
+  "title": "3D Canvas",
+  "id": "levels-3d-preview",
+  "description": "Bring your games to the 3rd dimension!",
+  "version": "6.0.16",
+  "authors": [
+    {
+      "name": "theripper93",
+      "email": "tsplab@gmail.com",
+      "url": "https://www.patreon.com/theripper93"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    },
+    {
+      "lang": "ja",
+      "name": "\u65e5\u672c\u8a9e",
+      "path": "languages/ja.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "languages/de.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Fran\u00e7ais",
+      "path": "languages/fr.json"
+    },
+    {
+      "lang": "es",
+      "name": "Espa\u00f1ol",
+      "path": "languages/es.json"
+    },
+    {
+      "lang": "pt-br",
+      "name": "Portugu\u00eas (Brasil)",
+      "path": "languages/pt-br.json"
+    },
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "path": "languages/it.json"
+    }
+  ],
+  "esmodules": ["scripts/main.js"],
+  "scripts": [],
+  "styles": [
+    "styles/module.css",
+    "styles/loadingScreen.css",
+    "styles/mapgen.css",
+    "styles/sharing.css"
+  ],
+  "packs": [
+    {
+      "name": "documentation",
+      "label": "3D Canvas Documentation",
+      "path": "packs/journals.db",
+      "type": "JournalEntry",
+      "private": false
+    },
+    {
+      "name": "macros",
+      "label": "3D Canvas Macros",
+      "path": "packs/macros.db",
+      "type": "Macro",
+      "private": false
+    },
+    {
+      "name": "partmacros",
+      "label": "3D Canvas Particle Effects",
+      "path": "packs/partmacros.db",
+      "type": "Macro",
+      "private": false
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "3D Canvas",
+      "sorting": "m",
+      "color": "#765c13",
+      "packs": ["documentation", "macros", "partmacros"]
+    }
+  ],
+  "socket": true,
+  "relationships": {
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "levels",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "wall-height",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "socketlib",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "recommends": [
+      {
+        "id": "canvas3dcompendium",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "canvas3dtokencompendium",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "manifest": "https://foundryvtt.s3.us-west-2.amazonaws.com/modules/levels-3d-preview/module.json",
+  "protected": false
+}
